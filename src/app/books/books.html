@@ -7,9 +7,15 @@
         <span class="position-absolute top-50 start-0 translate-middle-y ms-3 text-muted">
             <i class="bi bi-search"></i>
         </span>
-        <input name="searchText" (input)="onSearch($event.target.value)" type="text" class="form-control ps-5 pe-5 rounded-3" placeholder="Search" />
-        @if (searchVal()) {
-            <span class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted cursor-pointer">
+        <input 
+            name="searchText" 
+            [value]="searchVal"
+            (input)="onSearch($event.target.value)" 
+            type="text" class="form-control ps-5 pe-5 rounded-3" 
+            placeholder="Search"
+         />
+        @if (searchVal) {
+            <span (click)="resetSearch()" class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted cursor-pointer">
                 <i class="bi bi-x-lg bi-search-cancel"></i>
             </span>
         }

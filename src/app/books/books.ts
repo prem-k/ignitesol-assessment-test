@@ -25,7 +25,7 @@ export class Books implements OnInit, OnDestroy {
   loading = signal(false);
   
   categoryName = signal('');
-  searchVal = signal(false);
+  searchVal = '';
 
   booksArr:any = signal([]);
   nextPage:any = signal('')
@@ -50,6 +50,11 @@ export class Books implements OnInit, OnDestroy {
   ucFirst(str:any) {
     if (!str) return str;
     return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  resetSearch() {
+    this.searchVal = '';
+    this.onSearch('')
   }
 
   getParams(text:any = '') {
@@ -108,12 +113,12 @@ export class Books implements OnInit, OnDestroy {
 
   onSearch(value: any = ''): void {
     this.page.set(1)
-    this.searchVal.set(value)
+    this.searchVal = value;
     this.searchSubject.next(value.trim());
   }
 
   loadMore = () => {
-    const search:any = this.searchVal();
+    const search:any = this.searchVal;
     this.loadMoreSubject.next(search);
   }
 
