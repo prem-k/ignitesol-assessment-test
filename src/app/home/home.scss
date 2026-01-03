@@ -1,0 +1,85 @@
+.category-card {
+    border-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fiction-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Fiction.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.drama-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Drama.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.humour-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Humour.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.politics-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Politics.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.philosophy-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Philosophy.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.history-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/History.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.adventure-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url('/icons/Adventure.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
