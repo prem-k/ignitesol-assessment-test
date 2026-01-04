@@ -3,10 +3,23 @@
 }
 
 .title {
-    color: black;
+  color: black;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+
 .author {
-    color: #bdb7b7;
+  color: #bdb7b7;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .img-fit {

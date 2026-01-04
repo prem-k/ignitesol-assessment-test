@@ -3,7 +3,7 @@
         <a routerLink="/"><i class="bi bi-search-back"></i></a>
         <h5 class="mb-0 fw-semibold heading-color ml-2">{{categoryName()}}</h5>
     </div>
-    <div class="position-relative">
+    <div class="position-relative mb-4">
         <span class="position-absolute top-50 start-0 translate-middle-y ms-3 text-muted">
             <i class="bi bi-search"></i>
         </span>
@@ -22,15 +22,11 @@
     </div>
     <div class="row">
         @for (book of booksArr(); track book?.id) {
-            <div class="col-4 col-md-2">
-                <div class="card mt-3">
-                    <div class="card-body p-0">
-                        <img loading="lazy" class="img-fit" [src]="getPriortyImage(book)" [title]="book?.title">
-                        <div class="basic-info p-1">
-                            <p class="title">{{getBookTittle(book?.title)}}</p>
-                            <span class="author">{{getBookAuthor(book?.authors[0]?.name)}}</span>
-                        </div>
-                    </div>
+            <div class="col-4 col-md-2 mb-4">
+                <img loading="lazy" class="img-fit" [src]="getPriortyImage(book)" [title]="book?.title">
+                <div class="basic-info p-1">
+                    <p class="title" title="{{getBookTittle(book?.title)}}">{{getBookTittle(book?.title)}}</p>
+                    <span class="author">{{getBookAuthor(book?.authors[0]?.name)}}</span>
                 </div>
             </div>
         }

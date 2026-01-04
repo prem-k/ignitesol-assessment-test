@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LoadMoreDirective } from '../shared/directives/load-more';
 import { Loader } from '../shared/loader/loader';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-books',
@@ -20,7 +21,7 @@ import { Loader } from '../shared/loader/loader';
 export class Books implements OnInit, OnDestroy {
 
   mime_type = 'image/jpeg';
-  languages = 'fr,fi';
+  languages = environment.languages;
   page = signal(1);
   loading = signal(false);
   
